@@ -1,0 +1,31 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.searchResults {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cardsShow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+@media (width<=600px) {
+  .searchResults {
+    flex-direction: column;
+  }
+}
+
+@media (600px < width) {
+  .searchResults {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+}

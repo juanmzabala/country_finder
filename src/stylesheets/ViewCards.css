@@ -1,0 +1,43 @@
+.cardsContainer {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.mapaMundi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+}
+
+.mapaMundi img {
+  width: 70%;
+}
+@media (800px < width <=1000px) {
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: start;
+  }
+}
+
+@media (1000px < width < 1280px) {
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: start;
+  }
+}
+
+@media (1280px<= width) {
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: start;
+  }
+}
